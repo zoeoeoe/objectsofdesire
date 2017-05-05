@@ -1,0 +1,555 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>money box_objects of desire</title>
+<meta charset="utf-8" />
+<script type="text/javascript" src="http://www.mengdongli.com/skins/2012/js/jquery1.3.2.js"></script>
+
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../img/wood.jpg);
+	font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+	overflow-x: hidden;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+header {
+	padding-bottom: 2%;
+	padding-top: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+
+}
+#hksm{
+	max-height: 40px; padding-right: 20px;
+	opacity:0.75;
+}
+#hksm:hover{
+	opacity:1.0;
+}
+
+#share{
+	max-height: 40px;padding-top: 10px;
+	opacity:0.75;
+}
+#share:hover{
+	opacity:1.0;
+}
+#ood{top:15px; position: relative;padding-right: 20px;
+}
+
+#all{
+	 margin-left:5%; margin-right:5%;
+	background-image: url("../img/notebook2.jpg");
+	box-shadow: 3px 3px 5px #191919;
+}
+
+nav {text-align: center;
+	margin-left:5%; margin-right:5%;
+	text-align: center;
+	float: left;
+	width: 90%;
+	background-color: none;
+
+}
+nav ul {text-align: center;
+	margin: 0px;
+	padding-top: 5%;
+	list-style: none;	
+}
+nav ul li {
+	text-align: center;
+	white-space: pre-wrap;
+			
+}
+nav ul li a {text-align: center;
+	float: left;
+	color: gray;
+	width: 28%;
+	text-decoration: none;
+	border-right: 1px solid #c9c9c9;
+	padding-left: 2%;padding-right: 2%;padding-bottom: 3%;
+}
+nav ul li a:hover, nav ul li.active a {
+	color: #501eae;
+
+}
+
+#main1{
+	max-width:100%;
+	opacity: 1;
+	transition:All 0.2s ease-in-out;
+    -webkit-transition:All 0.2s ease-in-out;
+    -moz-transition:All 0.2s ease-in-out;
+    -o-transition:All 0.2s ease-in-out;
+}
+#main1:hover{
+opacity: 0.75;
+transform:translate(0,-5px);
+    -webkit-transform:translate(0,-3px);
+    -moz-transform:translate(0,-3px);
+    -o-transform:translate(0,-3px);
+    -ms-transform:translate(0,-3px);
+}
+
+.arrow{
+	padding-bottom: 5%;padding-left: 48%;
+	text-align: center; width: 4%;
+}
+
+.history { 
+	float: left;
+	width: 30%;
+	padding: 0 1.5%;
+	margin-top: 0px;
+}
+
+.history h3{
+	padding-top: 5%;
+	text-align: center;
+	width:100%; opacity: 1;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+}
+.history h3:hover{	
+	transform:scale(1.1);
+	-webkit-transform:scale(1.05);opacity: 0.75; cursor: pointer;
+}
+p {
+	line-height: 130%;
+	font-size: 90%;
+}
+#love{	
+	clear: both;
+	float: right;
+	padding: 0% 0% 0% 0%;
+}
+#love:hover{
+	opacity:0.75;
+}
+.top{
+	clear: both;
+	float: right;
+	padding: 1% 3% 1% 0%;
+}
+.top a:hover {
+opacity: 0.75;
+}
+.clear {
+	clear: both;
+}
+
+#inter{
+float: left;	padding: 0% 1.5% 5%; margin-top: 5%;}
+main {
+
+	padding: 0 1.5%;
+	margin: 0px auto;
+	width: 90%;	
+	margin-bottom: 0;	
+}
+
+.interaction {	
+	float: left;
+	width: 100%;
+	margin-top:0;
+	padding: 0 1.5%
+}
+.interaction img {
+	width: 80%;
+}
+
+.interaction p{
+	position: relative;width: 60%; padding-left: 20%; 
+}
+.sturcture{text-align: center;
+	float: left;
+	width: 40%;
+	padding: 0 1.5% 0% 5%;
+	margin-top: 0px;
+}
+}
+
+#how1{
+	transition:All 0.2s ease-in-out;
+    -webkit-transition:All 0.2s ease-in-out;
+    -moz-transition:All 0.2s ease-in-out;
+    -o-transition:All 0.2s ease-in-out;
+    cursor: pointer; opacity: 0.75;
+}
+#how2{position: relative; top:-100px;opacity: 0.75;
+	transition:All 0.2s ease-in-out;
+    -webkit-transition:All 0.2s ease-in-out;
+    -moz-transition:All 0.2s ease-in-out;
+    -o-transition:All 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#how1:hover{opacity:0.75;
+	transform:translate(0,-5px);
+    -webkit-transform:translate(0,-3px);
+    -moz-transform:translate(0,-3px);
+    -o-transform:translate(0,-3px);
+    -ms-transform:translate(0,-3px);
+}
+#how2:hover{opacity: 1;
+	transform:translate(0,5px);
+    -webkit-transform:translate(0,3px);
+    -moz-transform:translate(0,3px);
+    -o-transform:translate(0,3px);
+    -ms-transform:translate(0,3px);
+}
+#ring img{opacity: 0.75;
+}
+#ring img:hover{opacity: 1;
+}
+#bottle{opacity:0.75; cursor: pointer;
+}
+#bottle:hover{opacity:1;            
+			-webkit-animation-name: buzz-out;
+            -webkit-animation-duration: 1s ;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: 1;
+        }
+
+		@-webkit-keyframes buzz-out {
+          0% {
+            -webkit-transform: translateX(2px) rotate(2deg);
+          }
+          20% {
+            -webkit-transform: translateX(-2px) rotate(-2deg);
+          }
+          40% {
+            -webkit-transform: translateX(2px) rotate(2deg);
+          }
+          60% {
+            -webkit-transform: translateX(-2px) rotate(-2deg);
+          }
+          80% {
+            -webkit-transform: translateX(2px) rotate(2deg);
+          
+          100% {
+            -webkit-transform: translateX(-2px) rotate(-2deg);
+          }
+		}
+}
+.intertexts {
+	background-color: #f7ee6f;
+	float: left;
+	padding: 2%;
+	border-top: 1px solid #501eae;
+}
+section {	
+	width: 20%;
+	float: left;
+	padding: 0% 2% 2% 2%;
+	border-left: 1px dashed #501eae;
+}
+section h3 {
+	font-family: 'Droid Serif', serif;
+	color: #501eae;
+	font-size: 150%;
+	margin-top: 0px;
+}
+.gallery { 
+	float: left;
+	width: 30%;
+	padding: 0 1.5%;
+	margin-top: 0;
+	margin-bottom: 5%;
+}
+
+.gallery h3{
+	padding-top: 5%;
+	text-align: center;
+	width:100%; opacity: 1;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+}
+.gallery h3:hover{	
+	transform:scale(1.1);
+	-webkit-transform:scale(1.05);opacity: 0.75; cursor: pointer;
+}
+
+#gallery{
+padding-left: 1.5%; margin-top: 5%;
+}
+footer {
+	float: left;
+	width: 100%;
+}
+.contact {
+	padding: 1%;
+	float: left;
+	width: 20%;
+	padding-left: 10%;
+	font-size: 80%;
+}
+.contact img {
+	width: 200px;
+	height: auto;
+	float: left;
+	padding-left: 30%;
+}
+.contact ul li {
+	color: #d2d2d2;
+	list-style: none;
+	line-height: 200%;
+}
+.contact ul li a{
+	color: #d2d2d2;
+	list-style: none;
+	line-height: 200%;
+	text-decoration: none; color: #501eae;
+}
+
+.contact ul li a:hover{
+	color: white;
+	text-decoration: none; 
+}
+/*  ------ media ------- */
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		margin-top: 300px;
+		font-size: 500%;
+	}
+	nav ul li a {
+		width: 100%;
+		margin: 0;
+		padding: 15px 0px;
+		font-size: 140%;
+		border-bottom: 1px solid #fff;
+	}
+	.history {
+		width: 100%;
+		border: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+	.history p, h3 {
+		padding: 0px 10px;
+	}
+	#history{
+		height:16px;
+	}
+
+		.gallery {
+		width: 100%;
+		border: 0px;
+		margin: 0px;
+		padding: 0px;
+	}
+	.gallery p, h3 {
+		padding: 0px 10px;
+	}
+
+
+	.interaction img {
+		width: 100%
+
+	}
+	section {
+		width: 50%;
+		float: left;
+		border: 0px;
+	}
+	section h3 {
+		padding-left: 0px;
+	}
+	.contact {
+		margin: 0 auto;
+		float: left;
+		width: 50%;
+	}
+
+	.hide-info {
+		display: none;
+	}
+	.contact img {
+		margin-top: 0px;
+		width: 100%;		
+	}
+}
+</style>
+</head>
+<body>
+<a id="top"></a>
+<header>
+	<a href="http://hk.science.museum/en_US/web/scm/index.html"><img id="hksm" src="../img/hksm_logo.png" ></a>
+	<img id="ood" src="../img/objectsofdesire.png">
+	<a href="http://www.facebook.com/"><img id="share" src="../img/facebook.png" alt="facebook"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.youtube.com/"><img id="share" src="../img/youtube.png" alt="youtube"></a>&nbsp;&nbsp;
+	<a href="mailto:zhiyu.bai@connect.polyu.hk?Subject=[Moneybox]%20Hello" target="_top"><img id="share" src="../img/email.png" alt="email"></a>
+
+</header>
+<div id="all">
+<! ----- start of nav ------>
+<nav>
+	<ul>
+		<li><a href="#his"><img id="main1"src="../img/his14c.png"><img id="main1"src="../img/history.png"><br/>Dig out the past of money box with interesting stories!</a></li>
+		<li><a href="#high"><img id="main1"src="../img/top.png"><img id="main1"src="../img/interactions.png"><br/>How interaction is achieved through a money box?</a></li>
+		<li><a href="#int"><img id="main1"src="../img/rachel.png"><img id="main1"src="../img/gallery.png"></br>See the craziest money box beyond your imagination!</a></li>
+	</ul>
+
+</nav>
+
+<! ----- end of nav ------>
+	<div class="arrow"><img src="../img/down.png" /></div>
+
+	<div id="start"></div>
+<! ----- start of history ------>
+<a id="his"></a>
+<img src="../img/histag.png">
+<br/>
+<div class="history">
+<h3>
+<img src="../img/hisbc.png" /><br/><img src="../img/200bc.png">
+</h3>
+<p>The oldest find of a money box dates from 200 BC Greek colony Priene, Asia Minor, and features the shape of a little Greek temple with a slit in the pediment. Money boxes of various forms were also excavated in Pompeii and Herculaneum, and appear quite frequently on late ancient provincial sites, particularly in Roman Britain and along the Rhine.</p></div>
+
+<div class="history">
+<h3><img src="../img/14c.png" /><br/><img src="../img/h14c.png"></h3>
+<p>By the 15th century, terracotta piggy banks were made in all shapes and sizes. Most of them were broken, having been excavated around the Majapahit capital of Wilwatikta (modern Trowulan). There are several examples on display at the National Museum of Indonesia in Jakarta, including this one to the right which was pieced back together from fragments by conservators.</p>
+</div>
+
+<div class="history">
+<h3><img src="../img/his1920.png" /><br/><img src="../img/h1920.png"></h3>
+<p>In the 1920s, a new type of money box was launched by British banks, called the ‘home safe.’ The home safe was a little locked metal box given to customers, many of them children, to put their coins and banknotes in. The bank kept the key, so the customer had to take it to the bank to be unlocked. The money could put into bank account.<br/><br/><img id="love" src="../img/more.png"><br/><div class="top"><a href="#top"><img src="../img/totop.png"></a></div></p></div><br/>
+<! ----- end of history ------>
+<div class="clear"></div>
+<! ----- start of interaction ------>
+<a id="high"></a>
+<img id="inter"src="../img/intertag.png"><br/><br/>
+<main>
+	<div class="interaction">
+	<div class="sturcture">
+		<img id="how1"src="../img/how1.png" />
+		<p id="structure">The structure of a money box is composed by a lid and a container.<br/><br/><br/> </p>
+		<img class="hide-info" id="how2"src="../img/how2.png"/>
+		<img src="../img/quote.png"/>
+	</div>
+	<div class="sturcture">
+		<div id="ring" style="cursor:pointer"> <img src="../img/top.png" /></div>
+		<p>When the box is full, by rotating the lid to open it, money can be all drawn out.<br/><br/><br/></p>
+		<img id="bottle" src="../img/bottle.png" />
+		<p>To judge the quantity of coins inside, shaking the box is a direct way to get instant feedback.</p>
+	</div>
+
+	</div>
+</main>	
+	<div class="top">
+		<a href="#top"><img src="../img/totop.png"></a>
+	</div>
+<! ----- end of interaction ------>
+<div class="clear"></div>
+<! ----- start of intertexts ------>
+<div class="intertexts">
+<section style="border-left: 0px">
+	<h3>Affordance</h3>
+	<p>The hole on the lid allows the user to put something into the box. The threadlike shape suggests that coins should be put in and only vertically. The hole is an affordance that conveys the possible function of this box, with the shape of the hole serving as con- straint of the coins.</p>
+</section>
+
+<section>
+	<h3>Mapping</h3>
+	<p>The mapping between the hole and coins is suggested by the hole. The threadlike shape provides logical con- straints – to fit the hole with a coin, you have to put it in a specific way. If not, the coin cannot get in, and the user will know that their operation is wrong. </p>
+</section>
+
+<section>
+	<h3>Visability</h3>
+	<p>The lid is distinct from the body of moneybox by comparison of colours and shapes, providing strong visual clues to the user that the lid can be opened by separating the two parts. The visibility indicates the mapping be- tween intended actions and operations.</p>
+</section>
+
+<section>
+	<h3>Feedback</h3>
+	<p>Coins collected in the moneybox will change the circumstances inside, thus cause different sounds when a new coin is put in. The sound gives the user instant feedback about whether the box still works.</p>
+</section>
+<div class="top"><a href="#top"><img src="../img/totop.png"></a></div>
+</div>
+
+
+<! ----- end of intertexts ------>
+<div class="clear"></div>
+<! ----- start of gallery ------>
+<a id="int"></a>
+<img src="../img/gallerytag.png" id="gallery">
+<br/>
+<div class="gallery">
+<h3>
+<img src="../img/hisa.png" /><br/><img src="../img/vase.png">
+</h3>
+<p>Roman vase-shaped money box (2nd/3rd century AD). Ancient money boxes appear in the archaeological record in a wide variety of shapes.</p></div>
+
+<div class="gallery">
+<h3><img src="../img/rachel.png" /><br/><img src="../img/rac.png"></h3>
+<p>The Pike Place Market's unofficial bronze mascot, Rachel. It is an outdoor bronze sculpture of a piggy bank, designed by Georgia Gerber. It is a "life-size, realistic figure" of a sow piggy bank.</p>
+</div>
+
+<div class="gallery">
+<h3><img src="../img/spiral.png" /><br/><img src="../img/spi.png"></h3>
+<p>This spiral-shaped piggy bank can be more fun than normal ones. Just put a coin into it, the coin's gonna go around the piggy bank. With the transparent design, you could also know how much you have saved easier. <br/><br/><img id="love" src="../img/more.png"><br/><div class="top"><a href="#top"><img src="../img/totop.png"></a></div></p></div><br/>
+<! ----- end of gallery ------>
+<div class="clear"></div>
+</div>
+<! ----- start of contact ------>
+<a id="cot"></a>
+<footer>
+	<div class="contact">
+		<img src="../img/footer.png" style="padding-top: 20px" />
+	</div>
+	
+	<div class="contact">
+		<ul>
+		 	<li><strong>Bai Zhiyu&nbsp&bull;&nbsp14111736D</strong></li>
+		 	<li><a href="mailto:zhiyu.bai@connect.polyu.hk?Subject=[Moneybox]%20Hello" target="_top">zhiyu.bai@connect.polyu.hk</a></li>
+		 	<li>+852 5220 6710</li>
+		 </ul>
+	</div>
+	
+	<div class="contact hide-info">
+		<ul><li>Communication Design Year 1</li>
+		 	<li>SD1208 Interactivity 1</li>
+		 	<li>Assignment 3</li>
+		 </ul>
+	</div>
+	
+	</div>
+</footer>
+<! ----- end of contact ------>
+
+<! ----- slide effect ------>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#structure").hide();
+	$("#how1,#how2").click(function(){
+		$("#structure").slideToggle("midium");
+	})
+});
+</script>
+<! ----- end of slide effect ------>
+
+<! ----- rotate effect ------>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/jQueryRotate.js"></script>
+
+<script>
+$("#ring").toggle(function(){
+        $(this).children('img').rotate({ angle:0,animateTo:360,easing: $.easing.easeInOutExpo });
+                
+        },function(){
+        $(this).children('img').rotate({ angle:0,animateTo:-360,easing: $.easing.easeInOutExpo });
+})
+</script>
+<! -----end of rotate effect ------>
+
+</body>
+</html>

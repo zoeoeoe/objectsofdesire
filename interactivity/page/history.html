@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	
+	<head>
+		<title>money box</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="http://www.mengdongli.com/skins/2012/js/jquery1.3.2.js"></script>
+		<style type="text/css">
+			body{
+			background-image: url(../img/background.jpg); 
+			}
+			.hksm{
+				position:absolute; left:176.25px; top:20px; opacity:0.75;
+				filter:alpha(opacity=80); 
+			}
+			.hksm:hover{
+				opacity:1.0;
+				filter:alpha(opacity=100); 
+			}
+
+
+			.facebook{
+				position:absolute; right:173px; top:40px;opacity:0.75;
+				filter:alpha(opacity=80);
+			}
+			.facebook:hover{
+				opacity:1.0;
+				filter:alpha(opacity=100); 
+			}
+
+			.youtube{
+				position:absolute; right:207px; top:40px;opacity:0.75;
+				filter:alpha(opacity=80);
+			}
+			.youtube:hover{
+				opacity:1.0;
+				filter:alpha(opacity=100); 
+			}
+
+			.searchbar{
+				width:60px;
+				opacity:0; position:absolute; right:250px; height: 15px;top:45px; color:#fff; background-color: #000; border: 1px; border-radius: 30px; transition: 0.8s; 
+			}
+			.searchbar:hover{
+				color:#fff; opacity:1.00; width:110px; height: 15px; right:265px;
+				background-color: #000; border: 1px; border-radius: 30px; 
+			}
+			#submit_btn{ 
+                opacity:0.75;
+				filter:alpha(opacity=100);
+                 position: absolute;
+                 right:240px;
+                 top:40px;
+                 width:25px; 
+                 height:25px; 
+                 background:url(../img/search.png) no-repeat center; 
+                 display:block; 
+                 font-size:0; 
+                 line-height:0; 
+                 text-indent:-9999px;  
+             	border-style: none none none none;
+             }
+			
+			#submit_btn:hover{
+				opacity:1.0;
+				filter:alpha(opacity=100); cursor: pointer;
+			}
+
+
+#hisbc{
+	position:relative;
+	left:320px;
+	top:-20px;width:120px;opacity: 0.75;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+}
+#hisbc:hover {	
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);opacity: 1; cursor: pointer;
+}
+
+#his14c{
+	position:relative;
+	left:400px;
+	top:30px;width:130px;
+	opacity: 0.75;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+
+}
+#his14c:hover {	
+	opacity: 1.0;
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);cursor: pointer;
+}
+
+#his15{
+	position:relative;
+	left:570px;
+	top:-250px;width:90px;
+	opacity: 0.75;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+
+}
+#his15:hover {	
+	opacity: 1.0;
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);cursor: pointer;
+}
+
+#his1920{
+	opacity: 0.75;
+	position:relative;
+	left:700px;
+	top:-260px;width:150px;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+
+}
+#his1920:hover {
+	opacity: 1.0;	
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);cursor: pointer;
+}
+
+#hisnow{
+	opacity: 0.75;
+	position:relative;
+	left:800px;
+	top:-200px;width:130px;
+	transition:All 0.4s ease-in-out;
+	-webkit-transition:All 0.4s ease-in-out;
+	-moz-transition:All 0.4s ease-in-out;
+	-o-transition:All 0.4s ease-in-out;
+
+}
+#hisnow:hover {	
+	opacity: 1.0;
+	transform:scale(1.5);
+	-webkit-transform:scale(1.5);cursor: pointer;
+}
+
+.box{
+	width: 10%;
+	padding: 0 1.5%;
+}
+
+nav a {
+	letter-spacing: 2px;
+	position: relative;
+	text-decoration: none;
+	color: #501eae;
+	outline: none;
+	left:180px;
+	top:165px;
+	line-height:32px; 
+font-family:'Gill Sans', Gill Sans MT, sans-serif;
+	-webkit-transition: color 0.75s linear;
+	transition: color 0.75s linear;
+}
+
+ nav a:hover{
+	color: #000;
+	background:url(../img/circle.png) center no-repeat; padding: 6px;
+}
+ nav a:visited{
+	color: #501eae;
+}
+			#ood{
+				position: absolute; left:308px; top:20px; 
+				transition:All 0.2s ease-in-out;
+    -webkit-transition:All 0.2s ease-in-out;
+    -moz-transition:All 0.2s ease-in-out;
+    -o-transition:All 0.2s ease-in-out;
+
+			}
+
+			#ood:hover{
+transform:translate(0,-5px);
+    -webkit-transform:translate(0,-3px);
+    -moz-transform:translate(0,-3px);
+    -o-transform:translate(0,-3px);
+    -ms-transform:translate(0,-3px);
+
+
+			}
+			#pig{
+			width: 200px;position:absolute; left:50px; top:320px;
+			}
+			#pig:hover  {
+            -webkit-animation-name: buzz-out;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: 1;
+        }
+
+		@-webkit-keyframes buzz-out {
+          0% {
+            -webkit-transform: translateX(3px) rotate(2deg);
+          }
+          20% {
+            -webkit-transform: translateX(-3px) rotate(-2deg);
+          }
+          40% {
+            -webkit-transform: translateX(3px) rotate(2deg);
+          }
+          60% {
+            -webkit-transform: translateX(-3px) rotate(-2deg);
+          }
+          80% {
+            -webkit-transform: translateX(3px) rotate(2deg);
+          }
+          100% {
+            -webkit-transform: translateX(-3px) rotate(-2deg);
+          }
+		}
+
+/* 收缩展开效果 */
+.box{line-height:16px; font-size: 10pt;position:relative;font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif; top:-50px;orphans: 3;}
+#text1 {color:#666; width: 300px;position: relative; left: 480px; top:-160px;text-indent:-28px;orphans: 3;}
+#text2 {padding:0 6px;color:#666; width: 300px;position: relative; left: 390px; top:50px;text-indent:-28px;}
+#text3 {padding:0 6px;color:#666; width: 300px;position: relative; left: 690px; top:-350px;text-indent:-28px;}
+#text4 {padding:0 6px;color:#666; width: 300px;position: relative; left: 720px; top:-230px;text-indent:-28px;}
+#text5 {padding:0 6px;color:#666; width: 300px;position: relative; left: 460px; top:-340px;text-align:right; text-indent:28px;}
+#arrow1{
+	position:absolute; left:440px;top:-25px; width:30px;
+}
+#arrow2{
+	position:absolute; left:550px;top:-160px; width:30px;
+}
+#arrow3{
+	position:absolute; left:680px;top:-280px; width:30px;
+}
+#arrow4{
+	position:absolute; left:820px;top:-250px; width:30px;
+}
+#dots{
+	position:absolute; left:1000px;top:340px; width:40px;
+}
+#coinback{
+	position:absolute; left:320px;top:400px; width:100px; opacity: 0.75;
+}
+
+#more:link{
+	text-decoration: none;  font-style:italic;
+}
+
+#more:visited{
+	color:black; text-decoration: none;
+}
+#more:hover{
+	text-decoration: underline;
+}
+
+footer div{float: left;vertical-align: center
+line-height: 10pt;	position: absolute;font-size:8pt;text-align: left; top:520px; padding: 20px;color:#d2d2d2;
+left:305px;position:relative;font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif;width: 200px;}
+footer img{
+float: left; height:45px;
+}
+footer div a{
+	text-decoration: none; color: #501eae;
+}
+footer div a:hover{
+	text-decoration: underline;color:white;
+}
+h8{
+	orphans: 3;
+}
+</style>
+		
+
+	</head>
+
+	<body>
+	
+	<img id="trail" style="visibility:hidden" src="../img/coin.gif" />
+	<div class="hksm">
+		<a href="http://hk.science.museum/en_US/web/scm/index.html">
+		<img src="../img/hksm_logo.png" alt="Hong Kong Science Museum" height="40px";>
+		</a>
+		</div>
+		<form action="/example/html/form_action.asp" method="get">
+			<input type="submit" id="submit_btn" value="submit" onmouseover="showmenu()" onmouseout="hidemenu()">
+			<input class="searchbar" placeholder="Search here..." italic required type="text" name="search">
+		</form>
+	
+	<a href="../page/home.html"><img id="ood" src="../img/objectsofdesire.png" alt="objects of desrire" width="600px" ></a>
+	
+	<div class="facebook">
+		<a href="http://www.facebook.com/">
+		<img src="../img/facebook.png" alt="facebook" height="25px">
+		</a>
+		
+		</div>
+		<div class="youtube">
+		<a href="http://www.youtube.com/">
+		<img src="../img/youtube.png" alt="youtube" height="25px">
+		</a>
+		</div>
+	
+				<nav>
+					<div>
+					<a href="../page/history.html" >history</a> <br />
+					<a href="../page/howitworks.html">how it works</a> <br />
+					<a href="../page/gallery.html">gallery</a> <br />
+					</div>
+				</nav>
+<footer>
+<div>
+<img src="../img/footer.png">
+</div>
+<div>
+Bai Zhiyu&nbsp&bull;&nbsp14111736D<br/>
+<a href="mailto:zhiyu.bai@connect.polyu.hk?Subject=[Moneybox]%20Hello" target="_top">zhiyu.bai@connect.polyu.hk</a><br/>
++852 5220 6710
+</div>
+
+<div>
+Communication Design Year 1<br/> School of Design<br/>
+The Hong Kong Polytechnic University
+</div>
+</footer>
+	<div class="box">
+<img src="../img/hisbc.png" id="hisbc"></img>
+<div class="text" id="text1">
+<h8>&larr;&nbsp;&nbsp;200 BC</br>The oldest find of a money box dates from 200 BC Greek colony Priene, Asia Minor, and features the shape of a little Greek temple with a slit in the pediment. Money boxes of various forms were also excavated in Pompeii and Herculaneum, and appear quite frequently on late ancient provincial sites, particularly in Roman Britain and along the Rhine.<br/><a href="../page/more.html" target="_blank" id="more" >more...</a></h8></h8> 
+
+</div>
+
+	<div class="box">
+	<img id="arrow1" src="../img/arrow1.png">
+	<img id="his14c" src="../img/his14c.png">
+	<div class="text" id="text2">
+<h8>&uarr;&nbsp;&nbsp;1300–1400</br>By the 15th century, terracotta piggy banks were made in all shapes and sizes. Most of them were broken, having been excavated around the Majapahit capital of Wilwatikta (modern Trowulan). There are several examples on display at the National Museum of Indonesia in Jakarta, including this one to the right which was pieced back together from fragments by conservators.<br/><a href="../page/more.html" target="_blank" id="more" >more...</a></h8></h8>
+</div> 
+	</div>
+		<div class="box">
+		<img id="arrow2" src="../img/arrow2.png">
+	<img id="his15" src="../img/his15.png"> 
+	<div class="text" id="text3">
+<h8>&larr;&nbsp;&nbsp;1400</br>Intact ones are rare, of course, since you have to smash them to get your money, but here’s a 15th century one made out of terracotta in Oxford University’s Ashmolean Museum. If you have $5,000 in your piggy bank at home, take a hammer to it so you can buy this 15th century one in painted red clay. There’s no way your piggy bank is as adorably rotund of belly (and testicle) as the Majapahit one.<br/><a href="../page/more.html" target="_blank" id="more" >more...</a></h8></h8>
+	</div>
+		</div>
+	<div class="box">
+	<img id="arrow3" src="../img/arrow1.png">
+	<img id="his1920" src="../img/his1920.png"> 
+	<div class="text"id="text4">
+<h8>&uarr;&nbsp;&nbsp;1920</br>In the 1920s, a new type of money box was launched by British banks, called the ‘home safe.’ The home safe was a little locked metal box given to customers, many of them children, to put their coins and banknotes in. The bank kept the key, so the customer had to take it to the bank to be unlocked. The money could put into bank account.<br/><a href="../page/more.html" target="_blank" id="more" >more...</a> </h8>
+	</div>
+	</div>
+<div class="box">
+	<img id="arrow4" src="../img/arrow1.png">
+	<img id="hisnow" src="../img/hisnow.png"> 
+	<div class="text"id="text5">
+<h8>Now&nbsp;&nbsp;&rarr;</br>Nowadays, a Pig E Bank electronic can keep track of how much money is inside so you don't have to break it open just to find out that you don't have enough to buy the new Jessica Simpson album (shucks). It talks when you put money into it.<br/><a href="../page/more.html" target="_blank" id="more" >more...</a></h8>
+
+	</div>
+
+	</div>
+
+	<img id="dots" src="../img/dots.png">
+
+	<img id="coinback" src="../img/coinback.png">
+	<a href="#" ><img src="../img/pig.png" id="pig"></a>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("div.text").hide();
+	$(".box img").click(function(){
+		$(this).next(".text").slideToggle("midium");
+	})
+});
+</script>
+
+	</body>
+
+</html>
